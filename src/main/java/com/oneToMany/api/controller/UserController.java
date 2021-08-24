@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 import java.util.Optional;
-
+//User Delete needs to be implemented
 @RestController
 @RequestMapping(value = "/api")
 public class UserController {
@@ -32,7 +32,7 @@ public class UserController {
     RoleService roleService;
 
 
-    //Post
+    //Post- uses the role pathway to create a user. A user CANNOT exist without a role. However a role may exsist without a user
     @PostMapping("role/{id}")
     public ResponseEntity<?> updateRole(@PathVariable(value = "id") long id, @RequestBody Role role)
             throws Exception {
@@ -50,12 +50,13 @@ public class UserController {
     //Delete
 
 
-    //Get
+    //Get user by id
     @GetMapping("user/{id}")
     public Optional<User> getUserById(@PathVariable(value = "id")long id){
         return userRepository.findById(id);
     }
 
+    //returns a whole list of users
     @GetMapping("user/list")
     public List<User> getUserList() {
         return userRepository.findAll();

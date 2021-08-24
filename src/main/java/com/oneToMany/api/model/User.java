@@ -35,6 +35,7 @@ public class User extends AuditModel{
     private String password;
 
     //creates relationship between the two classes
+    //Many to one relationship because one role my have multiple users but a user may only have ONE ROLE
     @JsonIgnore
     @ManyToOne (targetEntity=Role.class)
     private Role role;

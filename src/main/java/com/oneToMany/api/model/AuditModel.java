@@ -10,7 +10,7 @@ import org.springframework.data.jpa.domain.support.AuditingEntityListener;
 
 import javax.persistence.*;
 import java.util.Date;
-
+// This class is what obtains the information for the Role and user such as time updated and created, and date
 @MappedSuperclass
 @EntityListeners(AuditingEntityListener.class)
 @Getter

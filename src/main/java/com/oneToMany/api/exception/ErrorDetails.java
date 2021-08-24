@@ -6,7 +6,7 @@ import lombok.Setter;
 import lombok.ToString;
 
 import java.util.Date;
-
+// a class which collects information to be included in custom error messages (TIme, message, and error message
 @Getter
 @Setter
 @AllArgsConstructor

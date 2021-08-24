@@ -1,7 +1,7 @@
 package com.oneToMany.api;
 
 
-
+/*
 import netscape.javascript.JSObject;
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -61,7 +61,7 @@ class OneToManyApplicationTests {
 
 
 	}
-
+/*
 	@Test
 	@DisplayName("Create new Role with valit request")
 	public void testValidRequest() throws JSONException {
@@ -81,4 +81,4 @@ class OneToManyApplicationTests {
 
 	}
 
-}
+}*/

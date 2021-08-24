@@ -12,7 +12,8 @@ import java.util.List;
 @Setter
 @NoArgsConstructor
 @ToString
-
+//extends audit model so that the created, updated, and date are included once new role is generated
+//model classes are used to demonstrated the variables necessary to create a role or user (in user class)
 public class Role extends AuditModel {
 
     @Id
